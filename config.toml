@@ -1,0 +1,9 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "hugo-theme-minos"
+paginate = 10
+[params]
+    smartToc = true
+    googleAnalytics = "UA-123-45"
+    katex = true
