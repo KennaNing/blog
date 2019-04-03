@@ -1,9 +1,68 @@
 baseURL = "http://KennaNing.github.io"
 languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "hugo-theme-minos"
-paginate = 10
+title = "KennaNing's Home"
+theme = "LeaveIt"
+
+paginate = 12
+enableEmoji = true
+enableRobotsTXT = true
+googleAnalytics = " "
+preserveTaxonomyNames = true
+
+[blackfriday]
+  hrefTargetBlank = true
+  nofollowLinks = true
+  noreferrerLinks = true
+
+[Permalinks]
+ posts = "/:year/:filename/"
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
+
 [params]
-    smartToc = true
-    googleAnalytics = "UA-123-45"
-    katex = true
+    since = 2011
+    author = "KennaNing"                           # Author's name
+    avatar = "/images/profile_photos.jpg"           # Author's avatar
+    subtitle = "Tomorow will be better !"         # Subtitle
+    #cdn_url = ""           # Base CDN URL
+    home_mode = "" # post or other
+
+    google_verification = ""
+   
+    description = "" # site description
+    keywords = "" # site keywords
+
+    beian = ""
+    baiduAnalytics = ""
+
+    license= '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
+
+[params.social]
+    GitHub = "KennaNing"
+    Twitter = "KennaNing"
+    Email   = "fangning0110@outlook.com"
+    #Instagram = "xxoo"
+    Wechat = "/images/wechat.png"  # Wechat QRcode image
+    #Facebook = "xxoo"
+    Telegram = "mobile-phone"
+    #Dribbble = "xxoo"
+    Medium = "nf1154052016@gmail.com"
