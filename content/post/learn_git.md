@@ -1,5 +1,5 @@
 
-___
+---
 title: "About git"
 date: 2019-04-03 
 weight: 70
@@ -7,8 +7,8 @@ keywords: ["branch","commit"]
 description: "learning git"
 tags: [ "tools"]
 categories: ["projects"]
-author: ""
-___
+author: "KennaNing"
+---
 
 
 # git 简介
@@ -70,3 +70,35 @@ incase you add stupid boss to your working directory,what you should do
 4. 创建+切换分支：`git checkout -b <name> ` 
 5. 合并某分支到当前分支：`git merge <name>`
 6. 删除分支：`git branch -d <name>`
+
+## 解决冲突
+
+1. 当git无法自动合并分支时，必须首先手动解决confict，再 add，commit。
+2. `git log --graph`可以看到分支合并图
+
+## 分支管理策略
+
+1. 实际开发中，`master`仅用来发布新版本，不能在上面干活，干活都在`dev`分支上
+2. `git merge --no-ff`表示用普通模式合并，即能看出来曾经做过合并
+
+## Bug分支
+
+1. master有bug，但是目前仍在dev：将dev刚写的部分代码stash`git stash`，以dev分支为基础创建issue-101，debug后，merge到master,删掉`issue-101`分支
+2. 回到dev，继续干活`git stash pop`
+
+## feature 分支
+
+1. 添加新功能，创建新分支：`git checkout -b feature-vulcan`
+2. 丢弃一个未合并的分支：`git branch -D <name>`
+
+## 多人协作
+
+1. 查看远程库信息：`git remote -v`
+2. 从本地推送分支`git push origin branch-name`，如果push失败，先`git pull`，再提交
+3. 在本地创建和远程对应的分支：`git checkout -b branch-name origin/branch-name`
+4. 建立本地分支和远程分支的关联：`git branch --set-upstream branch-name origin/branch-name`
+
+## Rebase
+
+rebase操作把本地未push的分叉提交历史整理成直线，使得查看历史提交变化时更容易
+
