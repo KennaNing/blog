@@ -27,11 +27,32 @@ author: ""
 ## git 的管理修改
 git 跟踪并管理的是修改，并非文件，每次修改，如果不`git add` 到stage，就不会加入到`commit`中\
 ## 撤销修改
-incase you add stupid boss to your working directory,what you should do?\
+incase you add stupid boss to your working directory,what you should do\
 1. 还未 `git add`：`git checkout --file`\
 2. 已 git add：`git reset HEAD <file>` 回到第一步，按第一步操作\
-3. 已 `git commit`:参考版本回退一节\
+3. 已 `git commit`:参考版本回退一节
+
 ## 删除文件
-1. 删错了，版本库中还有：`git checkout -- test.txt`\
-2. 确定删掉：`git rm test.txt` & `git commit -m 'remove test.txt'`\
+
+1. 删错了，版本库中还有：`git checkout -- test.txt`
+
+2. 确定删掉：`git rm test.txt` & `git commit -m 'remove test.txt'`
+
 # 远程仓库
+## 添加远程仓库
+
+1. 关联：`git remote add origin git@server-name:path/repo-name.git`
+2. push: `git push -u origin master` or `git push origin master`
+
+## 从远程库克隆
+`git clone git@github.com:michaelliao/gitskills.git`
+
+# 分支管理
+## 创建与合并分支
+
+查看分支：`git branch`
+创建分支：`git branch <name>`
+切换分支：`git checkout <name>`
+创建+切换分支：`git checkout -b <name> ` 
+合并某分支到当前分支：`git merge <name>`
+删除分支：`git branch -d <name>`
