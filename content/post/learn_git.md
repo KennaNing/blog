@@ -102,3 +102,53 @@ incase you add stupid boss to your working directory,what you should do
 
 rebase操作把本地未push的分叉提交历史整理成直线，使得查看历史提交变化时更容易
 
+# 标签管理
+
+标签🏷️是版本库的一个快照，跟某个commit绑定在一起
+
+## 创建标签
+
+1. `git tag <tagname>`用于新建一个标签，默认为`HEAD` ，也可以通过 `git log`找到你想加tag的 commit id
+2. 指定标签信息:`git tag -a <tagname> -m "babalabala"`
+3. 查看所有标签:`git tag`
+
+## 操作标签
+
+1. push本地的标签：`git push origin <tagname>`or `git push origin --tags`
+2. 如果标签已推送到远程，则先删除本地标签：`git tag -d <tagname`
+3. 再删除远程标签：`git push origin :refs/tags/<tagname>`
+
+# github
+
+如果想参与一个开源项目比如bootstrp，点Fork就在自己的账号下克隆了一个bootstrap仓库，然后从自己的账号下clone`git clone git@github.com:KennaNing/bootstrap;.git`，才能推送修改，否则没有权限。
+
+# 码云(gitee.com)
+
+一个本地库如何既关联码云，又关联github呢？（add时给不同的远程库加上名字）
+
+1. `git remote rm origin`
+2. `git remote add github git@github.com:KennaNing/learngit.git`
+3. `git remote add gitee git@gitee.com:KennaNing/learngit.git`
+3. `git remote -v`查看远程库的信息
+4. 推送时：`git push github master`or `git push gitee master`
+
+# 自定义git
+## 忽略特殊文件(.gitignore)
+## 配置别名
+
+1. `git config --global alias.st status` & co,ci,br
+2. 撤销修改是把暂存区的修改撤销掉（unstage），重新返回工作区，即是一个unstage操作，可以`git config --global alias.unstage reset HEAD`
+3. `git config --global alias.last log -1`
+
+# 搭建git or Gitolite
+目前用不到😄
+
+---
+
+用了一天时间学习git，弄懂了之前自己不懂git命令时，强行cp，ts，报错时却不知道为什么，学完后感觉常用到的也就add，commit，pull，push之类，其他的一些在最开始配置好就问题不大。
+这是在搭建hugo个人网站后的第一篇笔记，可能我的主题跟已往学习的markdown语法稍有不同，也花了一些时间在尝试语法，总之，学到新东西，并且在自己搭的喜欢的blog下记录，很开心，很有成就感的吖！
+
+
+
+
+
