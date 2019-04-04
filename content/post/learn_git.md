@@ -6,7 +6,7 @@ weight: 70
 keywords: ["branch","commit"]
 description: "learning git"
 tags: [ "tools"]
-categories: ["projects"]
+categories: ["projects_SMU"]
 author: "KennaNing"
 ---
 
