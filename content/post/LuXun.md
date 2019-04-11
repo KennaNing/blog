@@ -5,7 +5,7 @@ date: 2019-04-08
 weight: 70
 keywords: ["LuXun"]
 description: "some words i like"
-tags: [ "tools"]
+tags: [ "Proverbs"]
 categories: ["Principles_SMU"]
 author: "KennaNing"
 ---
