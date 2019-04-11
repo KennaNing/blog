@@ -1,7 +1,7 @@
 
 ---
 title: "About Principles"
-date: 2019-04-03 
+date: 2019-04-08 
 weight: 70
 keywords: ["LuXun"]
 description: "some words i like"
