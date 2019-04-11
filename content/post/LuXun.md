@@ -1,12 +1,12 @@
 
 ---
-title: "About git"
+title: "About Principles"
 date: 2019-04-03 
 weight: 70
-keywords: ["branch","commit"]
-description: "learning git"
+keywords: ["LuXun"]
+description: "some words i like"
 tags: [ "tools"]
-categories: ["projects_SMU"]
+categories: ["Principles_SMU"]
 author: "KennaNing"
 ---
 
