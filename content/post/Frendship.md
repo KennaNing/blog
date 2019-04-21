@@ -9,7 +9,6 @@ categories: ["Principles_SMU"]
 author: "KennaNing"
 ---
 
-
 There are some terrible things happened to me recently, so i have to learn and review what is a good friend and how to retain a worthy friendship. Also, they tell me again who is the one to be your friend and which one i should make friends in the future.
 
 #  Six signs of a strong frendship
@@ -27,7 +26,10 @@ They remind you what you're capable of. They see the potential in what we're say
 # Quotes on friendship
 
 > Nothing makes the earth seem so spacious as to have friends at a distance, they make the latitudes and longitudes.
+
 > Find a group of people who challenge and inspire you; spend a lot of time with them, and it'll change your life.
+
 > Anybody can sympathise with the sufferings of a friend, but it requires a very fine nature to spmpathise with a friend's success.
+
 > Don't make friends who are comfortable to be with you. Make friends who will force you to lever yourself up
 
