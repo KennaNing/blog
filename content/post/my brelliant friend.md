@@ -1,5 +1,5 @@
 ---
-title: "About My brilliant friend"
+title: "My brilliant friend"
 date: 2019-06-03
 weight: 70
 keywords: ["elina, lila"]
